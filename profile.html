@@ -4,254 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRIN135-PrelimExam</title>
-
-    <style>
-        body {
-            background-color: #111111;
-            color: #eeeeee;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            max-width: 435px;
-            margin: 0 auto;
-            padding: 30px;
-        }
-
-        nav {
-            margin-bottom: 18px;
-        }
-
-        nav a {
-            color: #eeeeee;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 20px;
-            margin: 12px 0 5px;
-        }
-
-        h2 {
-            font-size: 18px;
-            text-decoration: underline;
-            margin: 12px 0;
-        }
-
-        p {
-            margin: 8px 0;
-        }
-
-        .profile-photo {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border: 1px solid #999999;
-        }
-
-        .contact-info {
-            font-weight: bold;
-        }
-
-        .contact-info a {
-            color: #eeeeee;
-        }
-
-        ul,
-        ol {
-            margin: 0;
-            padding-left: 0;
-            list-style-position: inside;
-        }
-
-        li {
-            margin-bottom: 7px;
-        }
-
-        .simple-list {
-            list-style-type: none;
-        }
-
-        .simple-list li {
-            margin-bottom: 7px;
-        }
-
-        form {
-            width: 200px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin: 8px 0 5px;
-        }
-
-        input,
-        textarea {
-            width: 200px;
-            padding: 7px;
-            background-color: #111111;
-            color: #eeeeee;
-            border: 1px solid #888888;
-            font-family: Arial, sans-serif;
-        }
-
-        textarea {
-            height: 55px;
-            resize: none;
-        }
-
-        button {
-            width: 200px;
-            margin-top: 8px;
-            padding: 8px;
-            border: 1px solid #555555;
-            border-radius: 8px;
-            background-color: #2196f3;
-            color: #111111;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #42a5f5;
-        }
-
-        footer {
-            margin-top: 25px;
-            padding-top: 5px;
-        }
-
-        footer a {
-            color: #eeeeee;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
+    <header id="home">
+        <h1>Your Full Name</h1>
+        <p>Student | Web Development Enthusiast</p>
+
         <nav aria-label="Main navigation">
-            <a href="#profile">Profile</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#education">Education</a> |
-            <a href="#awards">Awards and Achievements</a> |
-            <a href="#contact">Contact Me</a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education &amp; Training</a></li>
+                <li><a href="#achievements">Awards &amp; Achievements</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
 
-        <section id="profile">
-            <img
-                class="profile-photo"
-                src="profile.jpg"
-                alt="Profile photo"
-                width="80"
-                height="80"
-            >
+        <!-- Profile / About Section -->
+        <section id="about">
+            <h2>About Me</h2>
 
-            <h1>Your Name</h1>
-
-            <p class="contact-info">
-                <a href="mailto:email@example.com">email@example.com</a>
-                |
-                09171231234
-                |
-                <a
-                    href="https://github.com/yourusername"
-                    target="_blank"
-                    rel="noopener noreferrer"
+            <figure>
+                <img
+                    src="images/profile.jpg"
+                    alt="Portrait of Your Full Name"
+                    width="200"
+                    height="200"
                 >
-                    profile.github.com
-                </a>
-            </p>
+                <figcaption>Your Full Name</figcaption>
+            </figure>
 
             <p>
-                I am a motivated Information Technology student interested
-                in web development, programming, and learning new
-                technologies. I enjoy creating simple and useful websites
-                and continuously improving my technical skills.
+                Hello! My name is Your Full Name. I am a student interested in
+                web development, programming, and technology. I enjoy learning
+                new skills and creating useful and creative digital projects.
             </p>
+
+            <address>
+                <p>
+                    Email:
+                    <a href="mailto:your-email@example.com">
+                        your-email@example.com
+                    </a>
+                </p>
+
+                <p>
+                    Contact Number:
+                    <a href="tel:+639000000000">
+                        +63 900 000 0000
+                    </a>
+                </p>
+
+                <p>
+                    GitHub:
+                    <a
+                        href="https://github.com/yourusername"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        github.com/yourusername
+                    </a>
+                </p>
+            </address>
         </section>
 
+        
         <section id="skills">
             <h2>Skills</h2>
 
-            <ul class="simple-list">
-                <li>- HTML and Semantic HTML</li>
-                <li>- CSS</li>
-                <li>- JavaScript</li>
-                <li>- Git and GitHub</li>
-                <li>- Problem Solving</li>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+                <li>Problem Solving</li>
+                <li>Communication</li>
             </ul>
         </section>
 
+        
         <section id="education">
-            <h2>Education</h2>
+            <h2>Education &amp; Relevant Training</h2>
 
-            <ol class="simple-list">
-                <li>- 2015–2021: Junior High School</li>
-                <li>- 2021–2023: Senior High School - ICT</li>
-                <li>- 2023–Present: BS Information Technology</li>
-                <li>- 2024: Introduction to Web Development Training</li>
-                <li>- 2025: Basic Git and GitHub Workshop</li>
+            <ol>
+                <li>
+                    <strong>Elementary Education</strong><br>
+                    Your Elementary School — 20XX
+                </li>
+
+                <li>
+                    <strong>Junior High School</strong><br>
+                    Your Junior High School — 20XX
+                </li>
+
+                <li>
+                    <strong>Senior High School</strong><br>
+                    Your Senior High School — 20XX
+                </li>
+
+                <li>
+                    <strong>College / University</strong><br>
+                    Your College or University — 20XX–Present
+                </li>
+
+                <li>
+                    <strong>Web Development Training</strong><br>
+                    Training Provider — 20XX
+                </li>
             </ol>
         </section>
 
-        <section id="awards">
-            <h2>Awards and Achievements</h2>
+        <!-- Awards and Achievements Section -->
+        <section id="achievements">
+            <h2>Awards &amp; Achievements</h2>
 
-            <ol class="simple-list">
-                <li>- 2019: Academic Excellence Award</li>
-                <li>- 2021: Outstanding ICT Student Award</li>
-                <li>- 2023: Dean's List Recognition</li>
-                <li>- 2024: Web Development Certificate</li>
-                <li>- 2025: Student Web Development Competition Finalist</li>
+            <ol>
+                <li>
+                    <strong>Academic Achievement</strong><br>
+                    Recognized for academic performance — 20XX
+                </li>
+
+                <li>
+                    <strong>School Competition</strong><br>
+                    Participant / finalist / winner — 20XX
+                </li>
+
+                <li>
+                    <strong>Programming Achievement</strong><br>
+                    Completed a programming or web development project — 20XX
+                </li>
+
+                <li>
+                    <strong>Relevant Certification</strong><br>
+                    Completed a relevant training or certification — 20XX
+                </li>
             </ol>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
 
             <form action="#" method="post">
 
-                <label for="name">Name:</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="John Doe"
-                    maxlength="25"
-                    required
-                    autocomplete="name"
-                >
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        maxlength="25"
+                        required
+                        autocomplete="name"
+                    >
+                </div>
 
-                <label for="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="johndoe@email.com"
-                    maxlength="25"
-                    required
-                    autocomplete="email"
-                >
+                <br>
 
-                <label for="message">Message:</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Enter your message here."
-                    maxlength="255"
-                    required
-                ></textarea>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        maxlength="25"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
 
-                <button type="submit">Contact Me</button>
+                <br>
+
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        maxlength="255"
+                        required
+                        rows="6"
+                        cols="40"
+                    ></textarea>
+                </div>
+
+                <br>
+
+                <button type="submit">Submit</button>
 
             </form>
         </section>
@@ -259,13 +202,8 @@
     </main>
 
     <footer>
-        <nav aria-label="Footer navigation">
-            <a href="#profile">Profile</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#education">Education</a> |
-            <a href="#awards">Awards and Achievements</a> |
-            <a href="#contact">Contact Me</a>
-        </nav>
+        <p>&copy; 2026 Your Full Name. All rights reserved.</p>
+        <p><a href="#home">Back to top</a></p>
     </footer>
 
 </body>
